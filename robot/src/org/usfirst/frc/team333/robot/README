@@ -1,0 +1,47 @@
+TeleOperative Interface
+-----------------------
+
+
+
+
+NEW CONTROLS
+The driver will be responsible for ALL the physical motion of the robot on the field.
+
+Joystick     : HOLD  : "Arcade" Drive
+Trigger      : HOLD :   Torque mode
+Button 2     : HOLD  :  N/A
+Button 3     : HOLD  :  Climber
+Button 4     : HOLD  :  Gear In/Out Toggle 
+Button 5     : HOLD  :  N/A
+Button 6     : PRESS :  N/A
+Button 7     : Press :  N/A
+
+
+
+
+
+
+
+Some GRIP stuff to keep, but that we might not need:
+/*
+    private final static String[] GRIP_ARGS 
+        = new String[] { "/usr/local/frc/JRE/bin/java", "-jar",
+                         "/home/lvuser/grip.jar", "/home/lvuser/project.grip" };
+    private final NetworkTable grip = NetworkTable.getTable("grip");
+*/
+...
+/*
+    try {
+        Runtime.getRuntime().exec(GRIP_ARGS);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+*/
+...
+/* 
+    // Get published values from GRIP using NetworkTables
+    for (double area : grip.getNumberArray("targets/area", new double[0])) {
+        System.out.println("Got contour with area=" + area);
+    }
+*/
+
